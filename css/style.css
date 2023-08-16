@@ -1,27 +1,5 @@
-:root {
-    --clr-neutral-100: hsla(0, 0%,100%,1);
-    --clr-primary-800: hsla(229, 47%,17%,1);
-    --clr-primary-700: hsla(229, 43%,20%,1);
-    --clr-primary-400: hsla(230, 50%,58%,0.3);
-    --clr-primary-300: hsla(229, 36%,39%,1);
-    --clr-primary-200: hsla(229, 21%,53%,1);
-    --clr-accent-400: hsla(147, 93%,43%,1);
-    --clr-secondary-400: hsla(229, 78%,60%,1);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;500&display=swap');
 
-    --ff-base : "Outfit" , sans-serif;
-
-    --fw-regular: 300;
-    --fw-semi-bold: 400;
-    --fw-bold: 700;
-
-    --fs-200: 0.875rem;
-    --fs-300: 1rem;
-    --fs-400: 1.125rem;
-    --fs-500: 1.375rem;
-    --fs-600: 1.75rem;
-    --fs-700: 3.25rem;
-
-}
 
 html {
     color-scheme: dark;
@@ -39,19 +17,37 @@ img{
 }
 
 body {
-    color: var(--clr-neutral-100);
-    font-family: var(--ff-base);
-    font-size: var(--fs-400);
-    font-weight: var(--fw-regular);
-    line-height: 1.5;
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 100;
 }
 
-.visually-hidden{
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    max-width: 100vw; /* You can adjust this value as needed */
+}
+
+.description {
+    flex: 1;
+    padding: 20px;
+}
+
+.image {
+    flex: 1;
+    text-align: right;
+}
+
+.name {
+    color: white; /* You can adjust the styling as needed */
+    
 }
